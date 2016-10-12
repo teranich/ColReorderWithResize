@@ -984,8 +984,8 @@
             }
 
             $(nTh).on('mousedown.ColReorder', function (e) {
-                e.preventDefault();
                 that._fnMouseDown.call(that, e, nTh, i);
+                return true;
             });
 
             // Add doubleclick also
